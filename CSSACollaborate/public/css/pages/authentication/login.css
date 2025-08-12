@@ -1,0 +1,39 @@
+@import url('../../base/variables.css');
+
+/* Styling for horizontal containers */
+.horizontal-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/* Styling for vertical containers */
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.stack-container {
+    position: relative;
+}
+
+#collaborate-title-base {
+    color: var(--text-normal);
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+#collaborate-title-layer {
+    position: absolute;
+    inset: 0;
+    margin: 5px;
+    z-index: 0;
+}
+
