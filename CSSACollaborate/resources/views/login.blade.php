@@ -1,7 +1,3 @@
-{{-- Insert styling for the Login page --}}
-@push('styles')
-    <link rel="stylesheet" href="{{ asset('css/pages/authentication/login.css') }}">
-@endpush
 
 {{-- Use the plain layout for the login page since no sidebar or topbar is needed --}}
 <x-layouts.plain-layout title="Login - CSSACollaborate">
@@ -14,7 +10,7 @@
             </div>
             <div class="vertical-container">
                 <h1 id="vanier-cssa-title" class="text-muted">Vanier <span class="text-accent">CSSA</span></h1>
-                <img class="vanier-logo" src="{{ asset('images/vaniercssa_logo.png') }}">
+                <img class="vanier-logo" src="{{ Vite::asset('resources/images/vaniercssa_logo.png') }}" alt="Vanier College Logo">
             </div>
         </div>
     </div>

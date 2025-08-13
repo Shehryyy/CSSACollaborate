@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/layouts/plain-layout.css') }}">
     <title>{{ $title }}</title>
-    @stack('styles') <!-- Stack for adding styles at the root of the document. -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <main class="background-container">
