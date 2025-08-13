@@ -1,5 +1,10 @@
 /* Variables */
 :root {
+    /* Set the font family */
+    --font-family: 'Inter', sans-serif;
+    --font-size: 16px;
+    font-family: var(--font-family);
+
     /* Background color variables */
     --background-dark: hsl(0, 0%, 10%);
     --background-normal: hsl(0, 0%, 25%);
