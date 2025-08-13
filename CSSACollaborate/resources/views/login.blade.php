@@ -10,7 +10,7 @@
         <div class="vertical-container">
             <div class="stack-container">
                 <h1 class="big-h1" id="collaborate-title-base" class="text-normal">Collaborate.</h1>
-                <h1 class="big-h1-outlined" id="collaborate-title-layer">Collaborate.</h1>
+                <h1 class="big-h1 outlined-text" id="collaborate-title-layer">Collaborate.</h1>
             </div>
             <div class="vertical-container">
                 <h1 id="vanier-cssa-title" class="text-muted">Vanier <span class="text-accent">CSSA</span></h1>

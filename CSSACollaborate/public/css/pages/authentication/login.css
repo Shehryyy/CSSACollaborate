@@ -3,7 +3,7 @@
 /* Styling for horizontal containers */
 .horizontal-container {
     width: 100%;
-    height: 100%;
+    height: 100vh;  /* Use viewport height instead of percentage */
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -13,14 +13,28 @@
 .vertical-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
+    justify-content: space-between;
+    flex: 1;
 }
 
 .stack-container {
     position: relative;
+    padding-bottom: 30px;  /* Account for absolutely positioned layer */
+    flex: 1;
+}
+
+.big-h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.outlined-text {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--border-normal);
+    text-stroke: 1px var(--border-normal);
 }
 
 #collaborate-title-base {
@@ -33,7 +47,15 @@
 #collaborate-title-layer {
     position: absolute;
     inset: 0;
-    margin: 5px;
+    top: 30px;
+    left: 35px;
     z-index: 0;
+}
+
+.vanier-logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
 }
 
