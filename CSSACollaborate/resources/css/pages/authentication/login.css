@@ -47,7 +47,7 @@
 
 /* Styling for making an h1 tag very big */
 .big-h1 {
-    font-size: 4.5rem;
+    font-size: 7rem;
     font-weight: bold;
 }
 
@@ -60,7 +60,7 @@
 /* Styling for the vanier logo */
 .vanier-logo {
     width: 100%;
-    max-width: 300px;
+    max-width: 328px;
     height: auto;
     object-fit: contain;
     border: 1px solid var(--border-normal);
@@ -81,12 +81,40 @@
     background-color: var(--background-normal);
 }
 
+/* Styles for the form containing the email and password inputs */
 #login-form {
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
     align-items: center;
+}
+
+/* Styling for input containers that are inside of a form */
+form div.text-input-div {
+    width: 75%;
+}
+
+/* Additional styling for the password container which contains the forgot password link. */
+.password-input-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+/* More specific selector for the password input */
+.password-input-container div.text-input-div {
+    width: 100%;
+}
+
+/* Styling for redirect links. */
+.redirect-link {
+    margin-top: 5px;
+    color: var(--secondary);
+    font-size: 1rem;
+    text-decoration: none;
+    align-self: flex-end;
 }
 
 /* Styling for muted text */
@@ -99,17 +127,57 @@
     color: var(--primary);
 }
 
+/* Styling for the container that has the login button and register link. */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+/* Styling for primary buttons */
+.button-primary {
+    background-color: var(--primary);
+    color: var(--text-normal);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    filter: drop-shadow(2px 0px 4px rgba(0, 0, 0, 25%)) drop-shadow(-2px 0px 4px rgba(0, 0, 0, 25%)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 25%));
+}
+
+/* Styling for the create account text. */
+.login-container p {
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+/* Base paragraph style */
+p {
+    font-size: 1rem;
+}
+
+/* Base h1 style */
 h1 {
     font-size: 2.986rem;
     color: var(--text-normal);
     font-weight: bold;
 }
 
+/* Base h4 style */
 h4 {
     font-size: 1.728rem;
     color: var(--text-muted);
 }
 
+/* Additional styling for the login form subtitle */
+.login-form-header h4 {
+    margin-top: 12px;
+}
+
+/* Horizontal line styling. */
 hr {
     border-width: 1px;
     border-color: var(--background-dark);
