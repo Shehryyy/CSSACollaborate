@@ -10,3 +10,7 @@ Route::post('/signUp/verify', function () {
     return view('signupVerify');
 })->name('signUp.verify');
 
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
