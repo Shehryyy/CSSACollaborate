@@ -7,7 +7,7 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas: 
         "title form"
         "logo form";
