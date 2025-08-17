@@ -2,6 +2,7 @@
 .login-layout-container {
     box-sizing: border-box;
     display: grid;
+    min-height: fit-content;
     height: 100vh;
     width: fit-content;
     padding-top: 3rem;
