@@ -1,3 +1,5 @@
+@props(['title' => 'CSSACollaborate'])
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
