@@ -4,6 +4,7 @@
 
 /* Import component styling */
 @import url('./components/text-input.css');
+@import url('./components/topbar.css');
 
 /* Import layout styles */
 @import url('./layouts/plain-layout.css');
