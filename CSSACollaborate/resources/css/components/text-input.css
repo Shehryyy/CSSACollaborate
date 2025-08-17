@@ -5,7 +5,7 @@
 }
 
 .text-input-div label {
-    font-size: 1.44rem;
+    font-size: clamp(1rem, 0.893rem + 0.456vw, 1.44rem);
     font-weight: bold;
     color: var(--text-normal);
 }
@@ -13,7 +13,7 @@
 .text-input-div input {
     box-sizing: content-box;
     padding: 10px;
-    font-size: var(--font-size);
+    font-size: clamp(0.8rem, 0.751rem + 0.207vw, 1rem);
     border: 1px solid var(--border-normal);
     border-radius: 5px;
     background-color: var(--background-light);

@@ -2,14 +2,38 @@
 .login-layout-container {
     box-sizing: border-box;
     display: grid;
+    min-height: fit-content;
     height: 100vh;
-    width: 90vw;
+    width: fit-content;
     padding-top: 3rem;
     padding-bottom: 3rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    overflow: auto;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+        "title form"
+        "logo form";
     align-self: center;
+}
+
+@media screen and (max-width: 880px) {
+    .login-layout-container {
+        grid-template-columns: max-content;
+        grid-template-rows: min-content auto;
+        grid-template-areas: 
+            "title"
+            "form";
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        justify-content: center;
+    }
+
+    .stack-container {
+        padding-bottom: 10px;
+    }
+
+    #vanier-logo-container {
+        display: none;
+    }
 }
 
 /* Styling for vertical containers */
@@ -39,15 +63,18 @@
 
 /* Styling for the stack containing the Collaborate title */
 .stack-container {
-    grid-row: 1;
-    grid-column: 1;
-    position: relative;
-    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "title";
+    grid-area: title;
+    height: fit-content;
 }
 
 /* Styling for making an h1 tag very big */
 .big-h1 {
-    font-size: 7rem;
+    font-size: clamp(2.5rem, 1.408rem + 4.66vw, 7rem);
     font-weight: bold;
 }
 
@@ -72,12 +99,11 @@
     display: flex;
     flex-direction: column;
     padding: 35px 40px 40px 40px;
-    max-width: 530px;
-    grid-row: 1 / 3;
-    grid-column: 2 / 2;
+    grid-area: form;
     border: 1px solid var(--border-normal);
     border-radius: 10px;
-    justify-self: right;
+    justify-self: center;
+    max-width: 80%;
     background-color: var(--background-normal);
 }
 
@@ -112,7 +138,6 @@ form div.text-input-div {
 .redirect-link {
     margin-top: 5px;
     color: var(--secondary);
-    font-size: 1rem;
     text-decoration: none;
     align-self: flex-end;
 }
@@ -143,7 +168,7 @@ form div.text-input-div {
     border: none;
     cursor: pointer;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 0.951rem + 0.207vw, 1.2rem);
     font-weight: bold;
     filter: drop-shadow(2px 0px 4px rgba(0, 0, 0, 25%)) drop-shadow(-2px 0px 4px rgba(0, 0, 0, 25%)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 25%));
 }
@@ -156,20 +181,26 @@ form div.text-input-div {
 
 /* Base paragraph style */
 p {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 0.751rem + 0.207vw, 1rem);
+}
+
+/* Base link style */
+a {
+    font-size: clamp(0.8rem, 0.751rem + 0.207vw, 1rem);
 }
 
 /* Base h1 style */
 h1 {
-    font-size: 2.986rem;
+    font-size: clamp(1.5rem, 1.139rem + 1.539vw, 2.986rem);
     color: var(--text-normal);
     font-weight: bold;
 }
 
 /* Base h4 style */
 h4 {
-    font-size: 1.728rem;
+    font-size: clamp(1rem, 0.823rem + 0.754vw, 1.728rem);
     color: var(--text-muted);
+    overflow: wrap;
 }
 
 /* Additional styling for the login form subtitle */
@@ -187,18 +218,17 @@ hr {
 /* Styling for the base Collaborate title */
 #collaborate-title-base {
     color: var(--text-normal);
-    position: relative;
+    grid-area: title;
     z-index: 1;
-    margin: 0;
 }
 
 /* Styling for the outlined Collaborate title */
 #collaborate-title-layer {
     color: var(--background-dark);
-    position: absolute;
-    inset: 0;
-    top: 30px;
-    left: 35px;
+    grid-area: title;
+    height: fit-content;
+    margin-top: clamp(0.375rem, 0.223rem + 0.647vw, 1rem); /* 0.375 min */
+    margin-left: clamp(0.438rem, 0.302rem + 0.582vw, 1rem); /* 0.438 min */
     z-index: 0;
 }
 
@@ -210,8 +240,7 @@ hr {
 
 /* Styling for the container holding the vanier title and logo*/
 #vanier-logo-container {
-    grid-row: 2;
-    grid-column: 1;
+    grid-area: logo;
     width: fit-content;
     justify-content: flex-end;
 }
