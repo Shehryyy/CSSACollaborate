@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    /* Set the font family */
+    /* Set the font family and base font size*/
     --font-family: 'Inter', sans-serif;
     --font-size: 16px;
     font-family: var(--font-family);

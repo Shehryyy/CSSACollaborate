@@ -5,9 +5,11 @@
 /* Import component styling */
 @import url('./components/text-input.css');
 @import url('./components/topbar.css');
+@import url('./components/sidebar.css');
 
 /* Import layout styles */
 @import url('./layouts/plain-layout.css');
+@import url('./layouts/main-layout.css');
 
 /* Import page-specific styles */
 @import url('./pages/authentication/login.css');

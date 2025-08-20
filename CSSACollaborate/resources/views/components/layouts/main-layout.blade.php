@@ -1,6 +1,11 @@
 @props(['title' => 'CSSACollaborate'])
 
 <x-layouts.plain-layout :title="$title">
-    <x-panels.topbar/>
-    <x-panels.sidebar/>
+    <div class="main-layout">
+        <x-panels.topbar/>
+        <x-panels.sidebar/>
+        <div class="main-layout-content">
+            {{ $slot }}
+        </div>
+    </div>
 </x-layouts.plain-layout>

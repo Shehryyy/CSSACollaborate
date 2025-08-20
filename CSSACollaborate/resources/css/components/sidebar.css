@@ -1,0 +1,45 @@
+/* Styling for the sidebar container */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: var(--background-normal);
+    grid-area: sidebar;
+    border-right: 1px solid var(--border-normal);
+    padding: 20px;
+    align-items: start;
+    gap: 30px;
+}
+
+/* Styling for the sidebar tab containers */
+.sidebar-tab {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Styling for the text of each tab */
+.sidebar-tab-text {
+    color: var(--text-muted);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Styling for the logout container. Shift to bottom. */
+.sidebar-logout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 30px;
+    flex: 1;
+}
+
+/* */
+.sidebar-pfp-container {
+    align-self: center;
+    border-radius: 50%;
+    background-color: var(--background-light);
+    border: 1px solid var(--border-normal);
+    padding: 15px;
+}
