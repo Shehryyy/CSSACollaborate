@@ -1,3 +1,4 @@
+/* Styling for the main layout container */
 .main-layout {
     display: grid;
     width: 100vw;
@@ -7,4 +8,14 @@
         "sidebar main-content";
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
+}
+
+/* Styling for the main content container */
+.main-layout-content-container {
+    grid-area: main-content;
+    background-color: var(--background-normal);
+    margin: 10px;
+    overflow-y: auto;
+    border: 1px solid var(--border-normal);
+    border-radius: 10px;
 }

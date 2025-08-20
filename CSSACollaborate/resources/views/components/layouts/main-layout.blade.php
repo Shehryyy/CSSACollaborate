@@ -4,7 +4,7 @@
     <div class="main-layout">
         <x-panels.topbar/>
         <x-panels.sidebar/>
-        <div class="main-layout-content">
+        <div class="main-layout-content-container">
             {{ $slot }}
         </div>
     </div>
