@@ -1,21 +1,45 @@
 /* Styling for the sidebar container */
 #sidebar {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    max-width: 200px;
     width: fit-content;
     background-color: var(--background-normal);
     grid-area: sidebar;
     border-right: 1px solid var(--border-normal);
-    padding: 20px;
-    align-items: start;
-    gap: 30px;
+    align-items: stretch;
 }
 
 /* Styling for the sidebar tab containers */
 .sidebar-tab {
     display: flex;
     align-items: center;
+    margin: 5px 0px;
+    padding: 10px;
     gap: 5px;
+}
+
+/* Add additional top margin for the profile tab */
+.sidebar-tab:nth-child(2) {
+    margin-top: 15px;  /* Add extra margin above second item */
+}
+
+/* Animate on hover */
+.sidebar-tab:hover {
+    cursor: pointer;
+    background-color: var(--sidebar-tab-hover);
+    transition: 0.1s;
+}
+
+/* Styling for the selected tab */
+.selected-tab {
+    background-color: var(--sidebar-tab-selected);
+    border-left: 5px solid var(--primary);
+}
+
+.selected-tab:hover {
+    background-color: var(--sidebar-tab-selected-hover);
 }
 
 /* Styling for the text of each tab */
@@ -31,15 +55,42 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
-    gap: 30px;
     flex: 1;
 }
 
-/* */
-.sidebar-pfp-container {
+/* Override margins set by sidebar-tab */
+#sidebar-logout-tab {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Adjust the width of the logout separator */
+.sidebar-logout-separator {
+    width: 90%;
+}
+
+/* Styling for the image container */
+.empty-sidebar-pfp-container {
     align-self: center;
     border-radius: 50%;
     background-color: var(--background-light);
     border: 1px solid var(--border-normal);
     padding: 15px;
+    margin-top: 15px;
+}
+
+/* Styling for non-empty image container */
+.sidebar-pfp-container {
+    align-self: center;
+    border-radius: 50%;
+    background-color: var(--background-light);
+    border: 1px solid var(--border-normal);
+    margin-top: 15px;
+}
+
+/* Styling for the profile picture  */
+.sidebar-profile-picture {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }

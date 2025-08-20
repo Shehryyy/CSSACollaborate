@@ -1,10 +1,10 @@
 @props(['selectedTab' => 'collaborate'])
 
 <div id="sidebar">
-    <div class="sidebar-pfp-container">
-        <img src="{{ Vite::asset('resources/images/icons/profile_icon_big.png') }}" class="profile-picture">
+    <div class="empty-sidebar-pfp-container">
+        <img src="{{ Vite::asset('resources/images/icons/profile_icon_big.png') }}" class="sidebar-profile-picture">
     </div>
-    <div class="sidebar-tab">
+    <div class="sidebar-tab selected-tab">
         <img src="{{ Vite::asset('resources/images/icons/profile_icon_small.png') }}" class="sidebar-tab-icon">
         <span class="sidebar-tab-text">Profile</span>
     </div>
@@ -26,7 +26,7 @@
     </div>
     <div class="sidebar-logout-container">
         <hr class="sidebar-logout-separator">
-        <div class="sidebar-tab">
+        <div id="sidebar-logout-tab" class="sidebar-tab">
             <img src="{{ Vite::asset('resources/images/icons/logout_icon.png') }}" class="sidebar-tab-icon">
             <span class="sidebar-tab-text">Logout</span>
         </div>
