@@ -1,0 +1,16 @@
+/* Styling for the collaborate container when no projects are listed */
+.empty-collaborate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 5px;
+}
+
+/* Styling for the h3 title when there are no projects listed */
+.empty-collaborate-container h3 {
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    font-weight: bold;
+}

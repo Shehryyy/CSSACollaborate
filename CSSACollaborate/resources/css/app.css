@@ -13,3 +13,4 @@
 
 /* Import page-specific styles */
 @import url('./pages/authentication/login.css');
+@import url('./pages/collaborate/collaborate.css');
