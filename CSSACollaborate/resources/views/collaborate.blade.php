@@ -1,6 +1,6 @@
 @props(['projects' => ['1']])
 
-<x-layouts.main-layout title="Collaborate - CSSACollaborate">
+<x-layouts.main-layout title="Collaborate - CSSACollaborate" sidebarSelectedTab="collaborate">
     @if(!empty($projects))
         {{-- This will be populated based on the projects in the $projects variable --}}
         {{-- For now, example projects will be added for the purpose of developing the front-end --}}
