@@ -117,6 +117,14 @@
     align-items: center;
 }
 
+#login-form-title {
+    font-weight: bold;
+}
+
+#login-form-subtitle {
+    color: var(--text-muted);
+}
+
 /* Styling for input containers that are inside of a form */
 form div.text-input-div {
     width: 75%;
@@ -136,7 +144,6 @@ form div.text-input-div {
 
 /* Styling for redirect links. */
 .redirect-link {
-    margin-top: 5px;
     color: var(--secondary);
     text-decoration: none;
     align-self: flex-end;
@@ -170,42 +177,12 @@ form div.text-input-div {
     width: 100%;
     font-size: clamp(1rem, 0.951rem + 0.207vw, 1.2rem);
     font-weight: bold;
-    filter: drop-shadow(2px 0px 4px rgba(0, 0, 0, 25%)) drop-shadow(-2px 0px 4px rgba(0, 0, 0, 25%)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 25%));
+    filter: var(--filter-full-drop-shadow);
 }
 
 /* Styling for the create account text. */
 .login-container p {
-    margin-top: 10px;
     align-self: flex-end;
-}
-
-/* Base paragraph style */
-p {
-    font-size: clamp(0.8rem, 0.751rem + 0.207vw, 1rem);
-}
-
-/* Base link style */
-a {
-    font-size: clamp(0.8rem, 0.751rem + 0.207vw, 1rem);
-}
-
-/* Base h1 style */
-h1 {
-    font-size: clamp(1.5rem, 1.139rem + 1.539vw, 2.986rem);
-    color: var(--text-normal);
-    font-weight: bold;
-}
-
-/* Base h4 style */
-h4 {
-    font-size: clamp(1rem, 0.823rem + 0.754vw, 1.728rem);
-    color: var(--text-muted);
-    overflow: wrap;
-}
-
-/* Additional styling for the login form subtitle */
-.login-form-header h4 {
-    margin-top: 12px;
 }
 
 /* Horizontal line styling. */
@@ -217,7 +194,6 @@ hr {
 
 /* Styling for the base Collaborate title */
 #collaborate-title-base {
-    color: var(--text-normal);
     grid-area: title;
     z-index: 1;
 }
@@ -234,8 +210,11 @@ hr {
 
 /* Styling for the cssa title */
 #vanier-cssa-title {
-    font-size: 3rem;
     font-weight: bold;
+}
+
+#vanier-cssa-title span {
+    font-size: var(--font-size-h1);
 }
 
 /* Styling for the container holding the vanier title and logo*/

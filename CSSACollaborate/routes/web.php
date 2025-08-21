@@ -18,3 +18,7 @@ Route::get('/login', function () {
 Route::get('/collaborate', function () {
     return view('collaborate');
 })->name('collaborate');
+
+Route::get('/fonts', function () {
+    return view('fonts');
+})->name('fonts');
