@@ -1,34 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Verify Email - CSSA Collaborate</title>
-  @vite('resources/css/signupVerify.css')
-</head>
-<body>
-<div class="logo"><span>CSSA</span> Collaborate</div>
-  <div class="container">
-    <div class="text-content">
-      <main>
-        <h2>Verify your email</h2>
-        <p>Enter the 6-digit verification code sent to your email</p>
-        <div class="code-input">
-          <input type="text" maxlength="1">
-          <input type="text" maxlength="1">
-          <input type="text" maxlength="1">
-          <input type="text" maxlength="1">
-          <input type="text" maxlength="1">
-          <input type="text" maxlength="1">
+<x-layouts.plain-layout title="Verify Email - CSSACollaborate">
+    <div class="signup-layout-container">
+        <div class="logo"><span>CSSA</span> Collaborate</div>
+        
+        <div class="login-form-container">
+            <div class="login-form-header">
+                <h1>Verify your email</h1>
+                <h4>Enter the 6-digit verification code sent to your email</h4>
+                <hr class="login-form-separator">
+            </div>
+
+            <form id="verify-form" method="POST" action="#">
+                @csrf
+                <div class="code-input">
+                    <input type="text" maxlength="1" />
+                    <input type="text" maxlength="1" />
+                    <input type="text" maxlength="1" />
+                    <input type="text" maxlength="1" />
+                    <input type="text" maxlength="1" />
+                    <input type="text" maxlength="1" />
+                </div>
+
+                <button type="submit" class="verify-btn">Verify</button>
+            </form>
+
+            <a href="{{ route('signup.form') }}" class="back-link">Back</a>
+
+            <div class="images">
+                <img src="{{ asset('images/order.png') }}" alt="Order Management">
+                <img src="{{ asset('images/profile.png') }}" alt="Profile Page">
+            </div>
         </div>
-        <button class="verify-btn">Verify</button>
-        <a href="#" class="back-link">Back</a>
-      </main>
     </div>
-    <div class="images">
-      <img src="{{ asset('images/order.png') }}" alt="Order Management">
-      <img src="{{ asset('images/profile.png') }}" alt="Profile Page">
-    </div>
-  </div>
-</body>
-</html>
+</x-layouts.plain-layout>

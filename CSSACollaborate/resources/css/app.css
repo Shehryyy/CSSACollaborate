@@ -16,4 +16,6 @@
 
 /* Import page-specific styles */
 @import url('./pages/authentication/login.css');
+@import url('./signup.css');
+@import url('./signupVerify.css');
 @import url('./pages/collaborate/collaborate.css');
