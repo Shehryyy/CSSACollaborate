@@ -14,3 +14,65 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+/* Styling for the main container containing the projects */
+.collaborate-projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Styling for the individual project containers */
+.project-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "title author"
+        "description description"
+        "status teammates";
+    background-color: var(--background-normal-lighter);
+    padding: 20px;
+    border: 1px solid var(--background-dark);
+    border-radius: 10px;
+    row-gap: 20px;
+    filter: var(--filter-partial-drop-shadow);
+}
+
+/* Styling for project containers on hover */
+.project-container:hover {
+    filter: var(--filter-full-drop-shadow);
+    border-color: var(--border-highlight);
+    cursor: pointer;
+}
+
+/* Change color of p tag */
+
+
+/* Set the grid areas for all elements in the project containers */
+.project-title-paragraph {
+    grid-area: title;
+    color: var(--text-normal);
+}
+
+.project-author-paragraph {
+    grid-area: author;
+    color: var(--text-normal);
+}
+
+.project-description-paragraph {
+    grid-area: description;
+    color: var(--text-normal);
+}
+
+.project-status-paragraph {
+    grid-area: status;
+    color: var(--text-muted);
+}
+
+.project-teammates-paragraph {
+    grid-area: teammates;
+    color: var(--text-muted);
+}

@@ -8,6 +8,7 @@
     /* Background color variables */
     --background-dark: hsl(0, 0%, 10%);
     --background-normal: hsl(0, 0%, 25%);
+    --background-normal-lighter: hsl(0, 0%, 34%);
     --background-light: hsl(0, 0%, 50%);
 
     /* Text color variables */
@@ -30,4 +31,8 @@
     --sidebar-tab-hover: hsla(0, 90%, 65%, 0.15);
     --sidebar-tab-selected: hsla(0, 90%, 65%, 0.25);
     --sidebar-tab-selected-hover: hsla(0, 90%, 65%, 0.2);
+
+    /* Effects variables */
+    --filter-full-drop-shadow: drop-shadow(2px 0px 4px rgba(0, 0, 0, 25%)) drop-shadow(-2px 0px 4px rgba(0, 0, 0, 25%)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 25%));
+    --filter-partial-drop-shadow: drop-shadow(2px 2px 4px rgba(0, 0, 0, 25%));
 }
