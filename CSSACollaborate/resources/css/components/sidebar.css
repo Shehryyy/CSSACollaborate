@@ -35,7 +35,7 @@
 /* Styling for the selected tab */
 .selected-tab {
     background-color: var(--sidebar-tab-selected);
-    border-left: 5px solid var(--primary);
+    border-left: 4px solid var(--primary);
 }
 
 .selected-tab:hover {
