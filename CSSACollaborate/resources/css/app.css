@@ -2,6 +2,9 @@
 @import url('./base/reset.css');
 @import url('./base/variables.css');
 
+/* Import base styles */
+@import url('./base/base-styles.css');
+
 /* Import component styling */
 @import url('./components/text-input.css');
 @import url('./components/topbar.css');
