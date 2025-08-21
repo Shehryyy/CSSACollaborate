@@ -49,9 +49,6 @@
     transition: 0.1s;
 }
 
-/* Change color of p tag */
-
-
 /* Set the grid areas for all elements in the project containers */
 .project-title-paragraph {
     grid-area: title;
