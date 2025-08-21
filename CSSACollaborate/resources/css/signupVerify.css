@@ -1,39 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
-
 body {
     margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(26, 26, 26);
-    font-family: 'Inter', Arial, sans-serif;
-    color: rgb(204, 204, 204);
+    background-color: var(--background-dark);
+    font-family: var(--font-family);
+    color: var(--text-muted);
 }
 
-.container {
-    background-color: rgb(64, 64, 64);
-    padding: 5%;
-    border-radius: 10px;
-    border: 1px solid rgb(68, 68, 68);
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+.signup-layout-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 90vw;
-    height: 90vh;
-    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
-.text-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 1rem;
-    max-width: 40%;
-    transform: translateX(50%);
+.login-form-container {
+    background-color: var(--container-bg);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+    width: 400px;
+    text-align: center;
+    position: relative;
 }
 
 .logo {
@@ -42,27 +35,26 @@ body {
     left: 10px;
     font-weight: bold;
     font-size: 20px;
-    color: rgb(150, 150, 150);
+    color: var(--text-secondary);
     z-index: 1000;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: var(--font-family);
 }
 
 .logo span {
     font-weight: normal;
-    color: rgb(246, 85, 85);
+    color: var(--accent-primary);
 }
 
-main h2 {
-    color: rgb(242, 242, 242);
+.login-form-header h1 {
+    color: var(--text-light);
+    font-size: 24px;
     margin-bottom: 5px;
-    font-weight: 600;
-    font-size: 22px;
 }
 
-main p {
-    color: rgb(204, 204, 204);
-    margin-bottom: 20px;
+.login-form-header h4 {
+    color: var(--text-muted);
     font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .code-input {
@@ -75,41 +67,37 @@ main p {
 .code-input input {
     width: 40px;
     height: 40px;
-    background-color: rgb(128, 128, 128);
+    background-color: var(--input-bg);
     border: none;
-    border-radius: 5px;
-    color: rgb(242, 242, 242);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-light);
     font-size: 24px;
     text-align: center;
 }
 
-.verify-btn, .back-btn {
+.verify-btn {
     width: 100%;
     padding: 10px 0;
     border: none;
-    border-radius: 6px;
-    color: white;
+    border-radius: var(--border-radius-sm);
+    color: var(--text-light);
     font-weight: 600;
+    background-color: var(--accent-primary);
     cursor: pointer;
     margin-bottom: 10px;
 }
 
-.verify-btn {
-    background-color: rgb(246, 85, 85);
-}
-
 .verify-btn:hover {
-    background-color: rgb(200, 50, 50);
+    background-color: var(--accent-primary-hover);
 }
 
 .back-link {
     font-size: 13px;
-    color: rgb(246, 166, 85);
+    color: var(--accent-secondary);
     cursor: pointer;
     margin-top: 10px;
     display: inline-block;
     text-decoration: none;
-    font-family: 'Inter', Arial, sans-serif;
 }
 
 .back-link:hover {
@@ -118,27 +106,29 @@ main p {
 
 .images {
     position: relative;
-    width: 40%;
+    width: 35%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    transform: translateX(-30%) translateY(-10%);
+    transform: translateX(-15%) translateY(-10%);
+    margin-top: 20px;
 }
 
 .images img:first-child {
-    width: 80%;
-    border-radius: 5px;
+    width: 70%;
+    max-width: 200px;
+    border-radius: var(--border-radius-sm);
     object-fit: cover;
-    margin-top: -25px; 
     z-index: 0;
 }
 
 .images img:nth-child(2) {
     position: absolute;
-    width: 80%;
-    top: 30px; 
-    left: 100px; 
-    border-radius: 5px;
+    width: 70%;
+    max-width: 200px;
+    top: 20px; 
+    left: 70px; 
+    border-radius: var(--border-radius-sm);
     object-fit: cover;
     z-index: 1;
 }

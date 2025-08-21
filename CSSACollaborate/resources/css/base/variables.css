@@ -6,22 +6,22 @@
     font-family: var(--font-family);
 
     /* Background color variables */
-    --background-dark: hsl(0, 0%, 10%);
-    --background-normal: hsl(0, 0%, 25%);
-    --background-light: hsl(0, 0%, 50%);
+    --background-dark: rgb(26, 26, 26);
+    --background-normal: rgb(64, 64, 64);
+    --background-light: rgb(128, 128, 128);
 
     /* Text color variables */
-    --text-normal: hsl(0, 0%, 95%);
-    --text-muted: hsl(0, 0%, 80%);
+    --text-normal: rgb(242, 242, 242);
+    --text-muted: rgb(204, 204, 204);
     
     /* Border color variables */
-    --border-dark: hsl(0, 0%, 20%);
-    --border-normal: hsl(0, 0%, 65%);
-    --border-highlight: hsl(0, 0%, 75%);
+    --border-dark: rgb(51, 51, 51);
+    --border-normal: rgb(166, 166, 166);
+    --border-highlight: rgb(191, 191, 191);
 
     /* Special color variables */
-    --primary: hsl(0, 90%, 65%);
-    --secondary: hsl(30, 90%, 65%);
+    --primary: rgb(246, 85, 85);
+    --secondary: rgb(246, 166, 85);
     --success: hsl(150, 90%, 65%);
     --warning: hsl(30, 90%, 65%);
     --error: hsl(0, 100%, 60%);

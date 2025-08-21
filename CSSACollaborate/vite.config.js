@@ -5,8 +5,7 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/css/signup.css', 
-                'resources/css/signupVerify.css' 
+                'resources/css/app.css'
             ],
             refresh: true,
         }),
