@@ -3,5 +3,7 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    min-width: fit-content;
+    min-height: fit-content;
     background-color: var(--background-dark);
 }

@@ -2,13 +2,20 @@
 @import url('./base/reset.css');
 @import url('./base/variables.css');
 
+/* Import base styles */
+@import url('./base/base-styles.css');
+
 /* Import component styling */
 @import url('./components/text-input.css');
+@import url('./components/topbar.css');
+@import url('./components/sidebar.css');
 
 /* Import layout styles */
 @import url('./layouts/plain-layout.css');
+@import url('./layouts/main-layout.css');
 
 /* Import page-specific styles */
 @import url('./pages/authentication/login.css');
 @import url('./signup.css');
 @import url('./signupVerify.css');
+@import url('./pages/collaborate/collaborate.css');

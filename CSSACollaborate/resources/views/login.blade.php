@@ -13,8 +13,8 @@
         </div>
         <div class="login-form-container">
             <div class="login-form-header">
-                <h1>Login to your Account</h1>
-                <h4>And find your next coding adventure</h4>
+                <h1 id="login-form-title">Login to your Account</h1>
+                <h4 id="login-form-subtitle">And find your next coding adventure</h4>
                 <hr class="login-form-separator">
             </div>
             <form id="login-form" method="POST" action="{{ route('login') }}">
