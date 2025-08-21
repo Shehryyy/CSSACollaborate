@@ -46,6 +46,7 @@
     filter: var(--filter-full-drop-shadow);
     border-color: var(--border-highlight);
     cursor: pointer;
+    transition: 0.1s;
 }
 
 /* Change color of p tag */
