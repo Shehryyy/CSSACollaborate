@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +38,44 @@
         </form>
 
         <a href="#" class="back-link">Back</a>
+=======
+<x-layouts.plain-layout title="Sign Up - CSSACollaborate">
+    <x-layouts.logo-layout/>
+    <div class="signup-layout-container">
+        <div class="container">
+
+            <h2>Create an Account</h2>
+            <p class="subtitle">And find your new coding adventure.</p>
+
+            <form action="/signUp/verify" method="POST">
+                @csrf
+
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" required>
+
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" required>
+
+                <label for="email">School Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <small>Your password must contain 8 characters</small>
+
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+
+                <label for="discord">Discord Username</label>
+                <input type="text" id="discord" name="discord">
+                <small>Example: username#1234</small>
+
+                <button type="submit" class="btn-create">Create</button>
+            </form>
+
+            <a href="/login" class="back-link">Back</a>
+        </div>
+>>>>>>> Stashed changes
     </div>
 </body>
 </html>

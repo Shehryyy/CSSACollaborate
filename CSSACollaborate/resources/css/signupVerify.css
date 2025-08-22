@@ -1,0 +1,122 @@
+body { 
+    margin: 0;
+    height: 100vh;
+    background-color: var(--background-dark);
+}
+
+.verify-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    width: 100%;
+}
+
+.verify-layout-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: var(--background-normal); 
+    border-radius: 12px;
+    border: 1px solid var(--border-normal);
+    box-shadow: var(--filter-full-drop-shadow);
+    padding: 60px 80px;
+    width: 85%;
+    height: 70%;
+    max-width: 95%;
+    flex-wrap: wrap;
+}
+
+.form-card {
+    flex: 0 1 400px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.form-header h1 {
+    color: var(--text-normal); 
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.form-header h4 {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.code-input {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.code-input input {
+    width: 45px;
+    height: 45px;
+    background-color: var(--background-light);
+    border: 1px solid var(--border-normal);
+    border-radius: 6px; 
+    color: var(--text-normal);
+    font-size: 22px;
+    text-align: center;
+    filter: var(--filter-partial-drop-shadow);
+}
+
+.verify-btn {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid var(--border-dark);
+    border-radius: 6px;
+    color: var(--white-text); 
+    font-weight: 600;
+    background-color: var(--primary); 
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.verify-btn:hover {
+    background-color: var(--error);
+}
+
+.back-link {
+    font-size: 13px;
+    color: var(--secondary); 
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.images {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.images img:first-child {
+    border-radius: 6px; 
+    object-fit: cover;
+    width: 80%;
+    max-width: 350px;
+    box-shadow: var(--filter-partial-drop-shadow);
+    margin-top: -40px;
+}
+
+.images img:nth-child(2) {
+    position: absolute;
+    top: 25px; 
+    left: 150px; 
+    border-radius: 6px; 
+    object-fit: cover;
+    width: 80%;
+    max-width: 350px;
+    box-shadow: var(--filter-partial-drop-shadow);
+}
+
